@@ -40,5 +40,4 @@ public class DiscussionPostServiceImpl implements DiscussionPostService{
         String keyword2 ="%"+keyword+"%";
         return discussionPostRepository.findByPostContentLike(keyword2);
     }
-
 }
