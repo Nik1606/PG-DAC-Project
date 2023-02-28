@@ -21,7 +21,7 @@ public class NoticeBoardController {
         noticeBoardService.saveNotice(noticeBoard);
         return "new Notice is added";
     }
-    
+
     @GetMapping("/getAll")
     public List<NoticeBoard> getAllNotices(){
         return noticeBoardService.getAllNotices();
