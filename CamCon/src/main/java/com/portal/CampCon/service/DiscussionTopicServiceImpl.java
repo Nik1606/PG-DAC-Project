@@ -42,7 +42,8 @@ public class DiscussionTopicServiceImpl implements DiscussionTopicService{
 
     // Only admin can delete Topic
     @Override
-    public void deleteTopicById(int id) {
+    public void deleteTopicById(int id)
+    {
         discussionTopicRepository.deleteById(id);
     }
 
