@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;CamCon/src/main/java/com/demo/CamCon/Dao/StudentRepository.java&apos;" deleteContents="false" description="Delete resource &apos;CamCon/src/main/java/com/demo/CamCon/Dao/StudentRepository.java&apos;" element1="/CamCon/src/main/java/com/demo/CamCon/Dao/StudentRepository.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1678087046726"/>
+</session>

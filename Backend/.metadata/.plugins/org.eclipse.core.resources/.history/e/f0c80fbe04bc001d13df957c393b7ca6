@@ -1,0 +1,13 @@
+package com.demo.CamCon.Service;
+
+import com.demo.CamCon.Beans.Faculty;
+
+public interface FacultyService {
+	
+	public Faculty addFaculty(Faculty faculty); 
+	
+	public void deleteFaculty(int id);
+	
+	public Faculty findById(int id);
+
+}

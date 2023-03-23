@@ -1,0 +1,10 @@
+package com.demo.CamCon.Dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demo.CamCon.Beans.Students;
+
+public interface StudentsDaoIF extends JpaRepository<Students, Integer> {
+
+	Students findBystudId(String id);
+}

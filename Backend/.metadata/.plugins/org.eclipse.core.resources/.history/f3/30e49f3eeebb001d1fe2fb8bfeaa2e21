@@ -1,0 +1,32 @@
+package com.demo.CamCon.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.demo.CamCon.Beans.Faculty;
+import com.demo.CamCon.Service.FacultyService;
+
+@RequestMapping("/faculty")
+public class FacultyController {
+
+	@Autowired
+	private FacultyService facultyService;
+	
+	@RequestMapping("/addFaculty")
+	public Faculty addFaculty(@RequestBody Faculty faculty) {
+		return facultyService.addFaculty(faculty);
+	}
+	
+	@PostMapping("/deleteFaculty")
+	public String deleteFaculty(@RequestBody int id) {
+		facultyService.deleteFaculty(id);
+		return "Deleted Successfully";
+	}
+	
+	@PostMapping("/findFaculty")
+	public Faculty findById(@RequestBody int id) {
+		return facultyService.findById(id);
+	}
+}

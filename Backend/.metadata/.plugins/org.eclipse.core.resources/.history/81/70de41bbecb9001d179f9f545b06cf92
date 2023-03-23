@@ -1,0 +1,13 @@
+package com.demo.CamCon.Service;
+
+
+
+public class SubjectService implements SubjectServiceIF {
+
+	@Override
+	public Object getSubjects() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

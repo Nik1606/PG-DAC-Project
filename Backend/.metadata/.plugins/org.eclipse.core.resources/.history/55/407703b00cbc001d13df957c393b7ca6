@@ -1,0 +1,5 @@
+package com.demo.CamCon.Dao;
+
+public interface AssignmentSubDao {
+
+}

@@ -1,0 +1,7 @@
+1677487746198	Delete resource 'CamCon'
+1677488063941	Delete resource 'CamCon/src/main/java/com/demo/CamCon/Beans/Assignment.java'
+1677488077809	Delete resource 'CamCon/src/main/java/com/demo/CamCon/Controller/AssignmentController.java'
+1677488082194	Delete resource 'CamCon/src/main/java/com/demo/CamCon/Dao/AssignmentDaoIF.java'
+1677488226041	Delete resource 'CamCon/src/main/java/com/demo/CamCon/Service/AssignmentServiceIF.java'
+1677488230980	Delete resource 'CamCon/src/main/java/com/demo/CamCon/Service/AssignmentServiceImpl.java'
+1677488270938	Delete resource 'CamCon/src/main/resources/.env'

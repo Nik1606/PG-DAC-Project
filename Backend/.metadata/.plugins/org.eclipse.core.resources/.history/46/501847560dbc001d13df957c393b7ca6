@@ -1,0 +1,21 @@
+package com.demo.CamCon.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.demo.CamCon.Service.AssignmentServiceIF;
+
+@CrossOrigin(origins="*")
+@RestController
+@RequestMapping("/submit")
+
+public class AssignmentSubmitController {
+
+	@Autowired
+	AssignmentServiceIF aserv;
+	
+	
+	
+}

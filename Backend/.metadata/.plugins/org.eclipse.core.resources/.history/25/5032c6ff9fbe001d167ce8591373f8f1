@@ -1,0 +1,13 @@
+package com.portal.camcon.respository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.portal.camcon.model.Feedback;
+
+public interface FeedbackRepositoryImpl extends JpaRepository<Feedback,Integer>{
+    
+List<Feedback> findBymodule(String module);
+
+}

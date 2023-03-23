@@ -1,0 +1,23 @@
+package com.demo.CamCon.Beans;
+
+import java.util.Date;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class AssignmentSubmit {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int ansId;
+	
+	private Date date;
+	private String fileType;
+	private String fileSize;
+	 private String fileName;
+	 private byte[] file;
+	 private int assignId;
+	 private String type; 
+
+}

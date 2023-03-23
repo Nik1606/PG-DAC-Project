@@ -1,0 +1,108 @@
+package com.demo.CamCon.Beans;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+
+public class Students {
+	
+	
+	@Id
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private String studId;
+	private String objectId;
+	private String PRN;
+	private String name;
+	private String fileName;
+	private String DOB;
+	private Date date;
+	private String email;
+	private String Phone;
+	private String Qualification;
+	
+	/*
+	 * public Students() { super(); } public Students(String pRN, String name,
+	 * String dOB, String email, String phone, String qualification) { super(); PRN
+	 * = pRN; this.name = name; DOB = dOB; this.email = email; Phone = phone;
+	 * Qualification = qualification; }
+	 */
+	/*
+	 * public Students(String objectId, String filename, Date uploadDate) {
+	 * objectId=objectId; this.fileName=filename; this.date=uploadDate;
+	 * 
+	 * 
+	 * }
+	 */
+	
+	
+	public Students(String string, String filename2, Date uploadDate, Object object, Object object2) {
+		this.objectId=string;
+		this.fileName=filename2;
+		this.date=uploadDate;
+		System.out.println("in constructorS");
+		this.name=object.toString();
+		this.studId=object2.toString();
+	
+	
+	}
+	/*
+	 * public Students(String objectId, String filename, Date uploadDate, Object
+	 * object, Object object2) {
+	 * 
+	 * this.objectId=objectId; this.fileName=filename; this.date=uploadDate;
+	 * this.name=object.toString(); this.studId=object2.toString();
+	 * 
+	 * 
+	 * }
+	 */
+	public String getPRN() {
+		return PRN;
+	}
+	public void setPRN(String pRN) {
+		PRN = pRN;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDOB() {
+		return DOB;
+	}
+	public void setDOB(String dOB) {
+		DOB = dOB;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhone() {
+		return Phone;
+	}
+	public void setPhone(String phone) {
+		Phone = phone;
+	}
+	public String getQualification() {
+		return Qualification;
+	}
+	public void setQualification(String qualification) {
+		Qualification = qualification;
+	}
+	@Override
+	public String toString() {
+		return "Students [studId=" + studId + ", objectId=" + objectId + ", PRN=" + PRN + ", name=" + name
+				+ ", fileName=" + fileName + ", DOB=" + DOB + ", date=" + date + ", email=" + email + ", Phone=" + Phone
+				+ ", Qualification=" + Qualification + "]";
+	}
+	
+	
+	
+}

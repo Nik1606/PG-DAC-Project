@@ -1,0 +1,10 @@
+package com.demo.CamCon.Service;
+
+public interface SubjectServiceIF {
+
+	Object getSubjects();
+	
+	
+	
+
+}

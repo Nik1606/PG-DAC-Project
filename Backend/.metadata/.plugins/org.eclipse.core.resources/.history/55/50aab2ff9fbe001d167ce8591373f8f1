@@ -1,0 +1,40 @@
+package com.portal.camcon.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.portal.camcon.model.Feedback;
+
+import com.portal.camcon.respository.FeedbackRepositoryImpl;
+
+@Service
+public class feedbackServiceImpl implements feedbackServiceIf{
+
+    @Autowired
+    FeedbackRepositoryImpl feedbackRepository;
+
+
+    @Override
+    public Feedback saveFeedback(Feedback fb) {
+        
+        return feedbackRepository.save(fb);
+    }
+
+
+   
+
+
+    @Override
+    public List<Feedback> getDataByModule(String module) {
+        
+    
+    return feedbackRepository.findBymodule(module);
+    }
+
+   
+    
+    
+    
+}

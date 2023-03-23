@@ -1,0 +1,11 @@
+package com.demo.CamCon.Dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demo.CamCon.Beans.Student;
+import com.demo.CamCon.Beans.Students;
+
+
+public interface StudentRepository extends JpaRepository<Students, Integer> {
+
+}

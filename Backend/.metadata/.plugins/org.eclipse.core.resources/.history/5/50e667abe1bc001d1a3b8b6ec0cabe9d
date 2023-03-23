@@ -1,0 +1,116 @@
+package com.demo.CamCon.Beans;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
+@SequenceGenerator(name="seq", initialValue=1000, allocationSize=100)
+public class Students {
+	
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
+	private long PRN;
+	
+	
+	private String name;
+	
+	private String DOB;
+	private String email;
+	private String Phone;
+	private String Qualification;
+	
+	/*
+	 * public Students() { super(); } public Students(String pRN, String name,
+	 * String dOB, String email, String phone, String qualification) { super(); PRN
+	 * = pRN; this.name = name; DOB = dOB; this.email = email; Phone = phone;
+	 * Qualification = qualification; }
+	 */
+	/*
+	 * public Students(String objectId, String filename, Date uploadDate) {
+	 * objectId=objectId; this.fileName=filename; this.date=uploadDate;
+	 * 
+	 * 
+	 * }
+	 */
+	
+	
+	/*
+	 * public Students( Date uploadDate, Object object, long object2) {
+	 * 
+	 * this.date=uploadDate; System.out.println("in constructorS");
+	 * this.name=object.toString(); this.PRN=object2;
+	 */
+	
+	//}
+	
+	public Students( String name, String dOB,  String email, String phone, String qualification) {
+		
+		this.name = name;
+		this.DOB = dOB;
+		this.email = email;
+		this.Phone = phone;
+		this.Qualification = qualification;
+	}
+	/*
+	 * public Students(String objectId, String filename, Date uploadDate, Object
+	 * object, Object object2) {
+	 * 
+	 * this.objectId=objectId; this.fileName=filename; this.date=uploadDate;
+	 * this.name=object.toString(); this.studId=object2.toString();
+	 * 
+	 * 
+	 * }
+	 */
+	public long getPRN() {
+		return PRN;
+	}
+	public void setPRN(long pRN) {
+		PRN = pRN;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDOB() {
+		return DOB;
+	}
+	public void setDOB(String dOB) {
+		DOB = dOB;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhone() {
+		return Phone;
+	}
+	public void setPhone(String phone) {
+		Phone = phone;
+	}
+	public String getQualification() {
+		return Qualification;
+	}
+	public void setQualification(String qualification) {
+		Qualification = qualification;
+	}
+	
+	@Override
+	public String toString() {
+		return "Students [  PRN=" + PRN + ", name=" + name
+				+  ", DOB=" + DOB + ", email=" + email + ", Phone=" + Phone
+				+ ", Qualification=" + Qualification + "]";
+	}
+	
+	
+	
+}
